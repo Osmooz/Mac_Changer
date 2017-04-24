@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="359.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.UserPageController_P">
+   <children>
+      <SplitPane dividerPositions="0.2842809364548495" layoutY="1.0" prefHeight="359.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="357.0" prefWidth="162.0">
+               <children>
+                  <GridPane layoutY="32.0" prefHeight="357.0" prefWidth="166.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="112.0" minHeight="0.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="238.0" minHeight="10.0" prefHeight="155.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="163.0" minHeight="10.0" prefHeight="158.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Separator prefHeight="0.0" prefWidth="166.0" />
+                        <Label fx:id="lNouvelleMac" onMouseClicked="#handleProposerNouvelleAdr" prefHeight="157.0" prefWidth="166.0" text="Proposer une nouvelle adresse" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
+                        <Label fx:id="lAttribMac" onMouseClicked="#handleAttribMac" prefHeight="157.0" prefWidth="166.0" text="Attribution Adresse MAC" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
+                        <Separator prefHeight="3.0" prefWidth="166.0" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.1366120218579235" layoutY="-6.0" orientation="VERTICAL" prefHeight="368.0" prefWidth="424.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <ToolBar layoutX="-4.0" layoutY="1.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="46.0" prefWidth="422.0" style="-fx-background-color: ;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <items>
+                                    <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleDisconnect" text="Deconnection" textAlignment="CENTER" />
+                                 </items>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </ToolBar>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane fx:id="APAttribMac" minHeight="0.0" minWidth="0.0" prefHeight="312.0" prefWidth="265.0">
+                           <children>
+                              <BorderPane fx:id="BPAttribMac" layoutX="11.0" prefHeight="312.0" prefWidth="422.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

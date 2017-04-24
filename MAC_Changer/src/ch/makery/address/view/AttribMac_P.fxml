@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="181.0" maxWidth="298.0" minHeight="181.0" minWidth="298.0" prefHeight="181.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.AttribMacController_P">
+   <children>
+      <Button fx:id="bReinitAdrMac" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="140.0" mnemonicParsing="false" onAction="#resetMac" prefWidth="259.0" text="Reinitialiser mon adresse MAC" textAlignment="CENTER" />
+      <Label fx:id="lAdrMac" alignment="CENTER" layoutX="80.0" layoutY="110.0" prefHeight="15.0" prefWidth="143.0" text="VIDE" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="20.0" layoutY="110.0" text="MAC :" textAlignment="CENTER" />
+      <CheckBox fx:id="cbModifAdrSurPc" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="60.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="259.0" text="Modifier l'adresse MAC sur mon PC" textAlignment="CENTER" />
+      <Button fx:id="bAttribMac" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#attribMac" prefHeight="25.0" prefWidth="259.0" text="Attribuer MAC" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

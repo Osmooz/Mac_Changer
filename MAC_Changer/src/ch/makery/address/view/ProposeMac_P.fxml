@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.ProposeNvlleAdrMacController">
+   <children>
+      <TextField fx:id="adrMac" layoutX="121.0" layoutY="15.0" />
+      <TextField fx:id="adrIP" layoutX="120.0" layoutY="53.0" />
+      <ComboBox fx:id="salle" layoutX="121.0" layoutY="89.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="171.0" />
+      <TextField fx:id="colonne" layoutX="121.0" layoutY="133.0" />
+      <TextField fx:id="rangee" layoutX="120.0" layoutY="169.0" />
+      <TextField fx:id="position" layoutX="121.0" layoutY="207.0" />
+      <Label layoutX="14.0" layoutY="20.0" text="Adresse MAC :" />
+      <Label layoutX="31.0" layoutY="58.0" text="Adresse IP :" />
+      <Label layoutX="67.0" layoutY="96.0" text="Salle :" />
+      <Label layoutX="45.0" layoutY="135.0" text="Colonne :" />
+      <Label layoutX="48.0" layoutY="172.0" text="Rangée :" />
+      <Label layoutX="48.0" layoutY="210.0" text="Position :" />
+      <Button layoutX="120.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleValidate" prefHeight="25.0" prefWidth="171.0" text="Valider" />
+   </children>
+</AnchorPane>

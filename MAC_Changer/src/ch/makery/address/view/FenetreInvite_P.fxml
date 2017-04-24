@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.GestPageController_P">
+   <children>
+      <SplitPane dividerPositions="0.1644295302013423" layoutX="-1.0" orientation="VERTICAL" prefHeight="300.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="39.0" prefWidth="598.0">
+               <children>
+                  <ToolBar layoutX="405.0" layoutY="6.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="45.0" prefWidth="598.0" style="-fx-background-color: ;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <Button fx:id="connexion" mnemonicParsing="false" onAction="#handleConnexion" text="Connexion" />
+                        <Button fx:id="inscription" mnemonicParsing="false" onAction="#handleSignUp" text="Inscription" />
+                     </items>
+                  </ToolBar>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="APAttribMac" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <BorderPane fx:id="BPAttribMac" prefHeight="245.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

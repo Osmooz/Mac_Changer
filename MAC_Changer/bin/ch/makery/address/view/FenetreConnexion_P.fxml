@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.ConnexionController_P">
+   <children>
+      <TextField fx:id="pseudoLabel" layoutX="213.0" layoutY="158.0" />
+      <PasswordField fx:id="mdpLabel" layoutX="213.0" layoutY="213.0" onAction="#onEnter" />
+      <Button layoutX="213.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="25.0" prefWidth="171.0" text="Sign in" />
+      <Hyperlink layoutX="234.0" layoutY="279.0" onAction="#handleMdpOublie" text="Password forgotten" />
+      <Button layoutX="213.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleInvite" prefHeight="25.0" prefWidth="171.0" text="Gest mod" />
+      <Button layoutX="445.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="25.0" prefWidth="137.0" text="Sign Up" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="22.0" />
+      <Label layoutX="106.0" layoutY="163.0" text="Username :" />
+      <Label layoutX="106.0" layoutY="218.0" text="Password :" />
+      <Label layoutX="213.0" layoutY="72.0" prefHeight="35.0" prefWidth="171.0" text="MAC Changer" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
